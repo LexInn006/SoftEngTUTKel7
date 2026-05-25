@@ -32,4 +32,9 @@ def compute_room_price(
     
     base_price = 900000 if room_type == "standard" else 1500000
 
+    if booking_day == "weekend":
+        base_price *= 1.2
+    elif booking_day == "holiday":
+        base_price *= 1.4
+
     return int(base_price * stay_duration)
