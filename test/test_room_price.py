@@ -38,14 +38,15 @@ def test_guest_child():
         stay_duration=2
     ) == 0
 
-# def test_child_free():
+def test_guest_teenager():
+    assert compute_room_price(
+        guest_age=18,
+        room_type="family",
+        booking_day="holiday",
+        stay_duration=5
+    ) == 10500000
 
-#     assert compute_room_price(
-#         guest_age=4,
-#         room_type="family",
-#         booking_day="holiday",
-#         stay_duration=5
-#     ) == 0
+
 
 
 
