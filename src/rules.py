@@ -13,7 +13,6 @@ def compute_room_price(
     room_type,
     booking_day,
     stay_duration,
-    room_type,
 ):
     
     if guest_age < 0:
