@@ -30,4 +30,5 @@ def compute_room_price(
 
     if room_type == "standard" and total_guests > 2:
         raise ValueError("Invalid number of guests: Standard room max is 2 guests.")
+    
     return 
