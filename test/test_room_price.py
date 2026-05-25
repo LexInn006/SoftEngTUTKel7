@@ -20,3 +20,12 @@ def test_invalid_age():
         booking_day="weekday",
         stay_duration=3
         )
+
+def test_child_free():
+
+    assert compute_room_price(
+        guest_age=4,
+        room_type="family",
+        booking_day="holiday",
+        stay_duration=5
+    ) == 0
