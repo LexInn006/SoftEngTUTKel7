@@ -13,6 +13,7 @@ def compute_room_price(
     room_type,
     booking_day,
     stay_duration,
+    room_type,
 ):
     
     if guest_age < 0:
@@ -27,5 +28,6 @@ def compute_room_price(
     if booking_day not in ["weekday", "weekend", "holiday"]:
         raise ValueError("Invalid booking day: Must be 'weekday', 'weekend', or 'holiday'.")
 
-    
+    if room_type == "standard" and total_guests > 2:
+        raise ValueError("Invalid number of guests: Standard room max is 2 guests.")
     return 
