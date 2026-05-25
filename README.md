@@ -8,4 +8,6 @@ Kelompok 7
 - Fabian Varel - 2802507606
 - Devano Carlo Putra Anta - 2802420750
 
-testing 1 pull req
+testing 1 pull req 
+
+testing
