@@ -18,4 +18,7 @@ def compute_room_price(
     if guest_age < 0:
         raise ValueError("Invalid age: Age cannot be negative.")
     
+    if stay_duration < 1 or stay_duration > 14:
+        raise ValueError("Invalid stay duration: Must be between 1 and 14 nights.")
+    
     return 
