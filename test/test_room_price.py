@@ -30,7 +30,13 @@ def test_invalid_age():
         )
     print(f"\n[INFO] Error berhasil ditangkap: {exc_info.value}")
     
-
+def test_guest_child():
+    assert compute_room_price(
+        guest_age=4,
+        room_type="family",
+        booking_day="weekday",
+        stay_duration=2
+    ) == 0
 
 # def test_child_free():
 
