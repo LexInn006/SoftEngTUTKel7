@@ -13,13 +13,16 @@ from src.rules import compute_room_price
 
 
 def test_invalid_age():
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError) as exc_info:
         compute_room_price(
         guest_age=-10,
         room_type="standard",
         booking_day="weekday",
         stay_duration=3
         )
+    print(f"\n[INFO] Error berhasil ditangkap: {exc_info.value}")
+    
+
 
 # def test_child_free():
 
