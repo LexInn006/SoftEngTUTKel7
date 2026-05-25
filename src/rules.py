@@ -24,4 +24,8 @@ def compute_room_price(
     if room_type not in ["standard", "family"]:
         raise ValueError("Invalid room type: Must be 'standard' or 'family'.")
     
+    if booking_day not in ["weekday", "weekend", "holiday"]:
+        raise ValueError("Invalid booking day: Must be 'weekday', 'weekend', or 'holiday'.")
+
+    
     return 
