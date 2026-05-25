@@ -21,4 +21,7 @@ def compute_room_price(
     if stay_duration < 1 or stay_duration > 14:
         raise ValueError("Invalid stay duration: Must be between 1 and 14 nights.")
     
+    if room_type not in ["standard", "family"]:
+        raise ValueError("Invalid room type: Must be 'standard' or 'family'.")
+    
     return 
