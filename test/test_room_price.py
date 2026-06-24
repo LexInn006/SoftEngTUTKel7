@@ -9,7 +9,7 @@ def test_guest_adult():
         booking_day="weekday",
         stay_duration=3
     ) == 2700000
-
+# AHDAJSDBABSDABS
 def test_guest_adult_family():
     assert compute_room_price(
         guest_age=32,
